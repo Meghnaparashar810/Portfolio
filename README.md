@@ -1,4 +1,4 @@
-# 🌟 Meghna Parashar Portfolio
+<img width="1735" height="845" alt="Screenshot 2025-11-09 213057" src="https://github.com/user-attachments/assets/a8095d98-8730-4195-b0f8-79a8148b523b" /># 🌟 Meghna Parashar Portfolio
 
 Welcome to my personal portfolio! This project showcases my **skills, projects, and contact information**. Built with **React, Vite, Tailwind CSS**, and enhanced with **PWA features** for mobile installability.
 
@@ -26,4 +26,8 @@ Welcome to my personal portfolio! This project showcases my **skills, projects, 
 ---
 
 ## 📂 Project Structure
+![Portfolio Screenshot](./assets/dp.png)
+
+
+
 
