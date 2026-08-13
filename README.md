@@ -1,16 +1,30 @@
-# React + Vite
+# Meghna Parashar - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal portfolio website showcasing my skills, projects, experience, and contact information.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Featured Projects
 
-## React Compiler
+- MERN Job Portal
+- Food Delivery Website
+- Real-Time Vehicle Tracking System
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Responsive design
+- Smooth navigation
+- Projects showcase
+- Skills section
+- Work experience
+- Contact section
+- Resume
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Author
+
+Meghna Parashar
