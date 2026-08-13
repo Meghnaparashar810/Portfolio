@@ -142,6 +142,9 @@ h4 {
         background-color 0.3s ease,
         color 0.3s ease;
 }
+.second button a{
+    color: white;
+}
 
 .second button:hover {
     background-color: rgba(80, 80, 80, 0.75);
@@ -1191,7 +1194,22 @@ hr {
 
 
 
+/* =========================
+   SCROLL REVEAL
+========================= */
 
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(70px);
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.scroll-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 

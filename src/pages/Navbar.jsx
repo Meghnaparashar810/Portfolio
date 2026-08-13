@@ -33,11 +33,11 @@ function Navbar() {
                 {menuopen && (
                     <div className="mobile-menu">
                         <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Experience</a>
-                        <a href="">Projects</a>
-                        <a href="">Skills</a>
-                        <a href="">Contact</a>
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#project">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
                         <a href="/meghnaparashar Resume.pdf">Resume</a>
                     </div>
                 )}

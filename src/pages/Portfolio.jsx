@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './Navbar.jsx'
 import "./Portfolio.css"
 
@@ -13,6 +13,36 @@ import order from "../assets/order.png"
 import vehcile from "../assets/vechile.png"
 
 function Portfolio() {
+  useEffect(() => {
+
+    const elements = document.querySelectorAll(".scroll-reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.2
+      }
+    );
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+
+  }, []);
   return (
     <div>
       <Navbar />
@@ -51,8 +81,8 @@ function Portfolio() {
 
         {/* BUTTONS */}
         <div className="second">
-          <button className='firstbtn'>View My Work</button>
-          <button className='secondbtn'>Contact</button>
+          <button className='firstbtn'> <a href="#project">View My Work</a></button>
+          <button className='secondbtn'> <a href="#contact">Contact</a></button>
         </div>
 
 
@@ -73,7 +103,7 @@ function Portfolio() {
 
 
       {/* ABOUT SECTION */}
-      <div className="about" id='about'>
+      <div className="about scroll-reveal" id='about'>
 
         <div className="section-title">
           <h6>01---</h6>
@@ -117,7 +147,7 @@ function Portfolio() {
 
 
       {/* EXPERIENCE SECTION */}
-      <div className="Experince" id='experience'>
+      <div className="Experince scroll-reveal" id='experience'>
 
         <div className="section-title">
           <h6>02---</h6>
@@ -159,15 +189,15 @@ function Portfolio() {
 
       {/* projects */}
 
-      <div className='p' id='project'>
+      <div className='p scroll-reveal' id='project'>
 
-        <div className='project'>
+        <div className='project scroll-reveal'>
 
           <h2><h5>03---</h5>  project
           </h2>
         </div>
         <h3>Featured :- Job Portal</h3>
-        <div className='project-content'>
+        <div className='project-content '>
 
           <div className='box1'> A MERN-based job portal designed to connect students with job and internship opportunities, featuring role-based
             authentication, student and faculty dashboards, job posting, and application management.
@@ -203,7 +233,7 @@ function Portfolio() {
 
 
       {/* skills */}
-      <div className="skills-section" id='skills'>
+      <div className="skills-section scroll-reveal" id='skills'>
 
         <div className="skills">
           <h2>
@@ -280,7 +310,7 @@ function Portfolio() {
 
       {/* CONTACT SECTION */}
 
-      <div className="contact-section" id='contact'>
+      <div className="contact-section scroll-reveal" id='contact'>
 
         <div className="skills contact-heading">
           <h2>
@@ -317,7 +347,7 @@ function Portfolio() {
           <div className="contact-links">
 
             <a
-              href="parasharmeghna8@gmail.com"
+              href="mailto:parasharmeghna8@gmail.com"
               className="contact-card"
             >
               <div className="contact-card-icon">
@@ -379,7 +409,7 @@ function Portfolio() {
 
       {/* FOOTER */}
 
-      <footer className="footer">
+      <footer className="footer scroll-reveal">
 
         <div className="footer-left">
           <h3>Meghna Parashar</h3>
@@ -404,7 +434,7 @@ function Portfolio() {
           >
             LinkedIn
           </a>
-          <a href="parasharmeghna8@gmail.com">
+          <a href="mailto:parasharmeghna8@gmail.com">
             Email
           </a>
 
